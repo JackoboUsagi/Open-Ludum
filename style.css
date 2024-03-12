@@ -1,0 +1,410 @@
+@font-face
+	{
+	font-family: Main_Texts;
+	src: url(ui_fonts/pixeloid_sans/PixeloidSans.ttf);
+	}
+
+
+@font-face
+	{
+	font-family: Menu_Font;
+	src: url(ui_fonts/robtronika/Robtronika-Regular.ttf);
+	}
+
+html,body
+	{
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:100vh;
+	background-color:#222222;
+	overflow:hidden;
+	}
+
+span
+	{
+	visibility:hidden;
+	}
+	
+a
+	{
+	text-decoration:none;
+	color:#ffffff;
+	outline : none;
+	}
+
+a:hover
+	{
+	text-decoration:none;
+	color:#ff8888;
+	outline : none;
+	}
+
+/*
+ * ###############################################################
+ * LIST OF THE GAMES
+ * ###############################################################
+ */
+
+#gameslist
+	{
+	width:25vw;
+	height:90vh;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#272727;
+	overflow-x: hidden;
+	z-index:999;
+	border-right:0.25vw solid #191919;
+	}
+
+p.gameid
+	{
+	padding-left:1vw;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	margin:0;
+	}
+
+p.gameid_selected
+	{
+	padding-left:1vw;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	margin:0;
+	background-color:#495300;
+	}
+
+a.gameid:link, a.gameid:visited
+	{
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	}
+
+p.gameid:hover
+	{
+	background-color:#393f00;
+	}
+
+p.gameid_selected:hover
+	{
+	background-color:#6a7400;
+	}
+
+/*
+ * ###############################################################
+ * WALLPAPER / BANNER
+ * ###############################################################
+ */
+
+#gamewallpaper
+	{
+	width:74.75vw;
+	height:45vh;
+	position:absolute;
+	top:0vh;
+	left:25.25vw;
+	background:url("games_wallpapers/selected_game.jpg") no-repeat right center;
+	background-size:auto 45vh;
+	z-index:0;
+	}
+
+/*
+ * ###############################################################
+ * LOGO
+ * ###############################################################
+ */
+
+#gamelogo
+	{
+	width:72.75vw;
+	height:35vh;
+	position:absolute;
+	top:0vh;
+	left:27.25vw;
+	background:url("games_logos/selected_game.png") no-repeat left center;
+	background-size:auto 27.5vh;
+	z-index:0;
+	}
+
+/*
+ * ###############################################################
+ * INFOS WITH GRADIENT
+ * ###############################################################
+ */
+
+#gameinfo_banner_ui
+	{
+	width:74.75vw;
+	height:10vh;
+	position:absolute;
+	top:35vh;
+	left:25.25vw;
+	background:url("ui_items/banner_1.png") repeat center;
+	background-size:auto 10vh;
+	image-rendering: pixelated;
+	opacity:30%;
+	z-index:0;
+	}
+
+#gameinfo
+	{
+	width:74.75vw;
+	height:10vh;
+	position:absolute;
+	top:35vh;
+	left:25.25vw;
+	background: linear-gradient(to bottom, rgba(34,34,34,0) 0%,#222222 100%);
+	z-index:0;
+	}
+
+p.info
+	{
+	padding-top:1vh;
+	padding-bottom:1.5vh;
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:center;
+	}
+
+p.menu
+	{
+	padding-top:0vh;
+	padding-bottom:1vh;
+	margin:0;
+	font-family: Menu_Font;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-align:center;
+	}
+	
+span.play
+	{
+	visibility:visible;
+	color: #fff;
+	text-shadow:
+      0 0 3.5px #fff,
+      0 0 5px #fff,
+      0 0 10.5px #fff,
+      0 0 21px #0fa,
+      0 0 41px #0fa,
+      0 0 46px #0fa,
+      0 0 51px #0fa,
+      0 0 75.5px #0fa;
+	}
+
+span.play:hover
+	{
+	visibility:visible;
+	color: #fff;
+	text-shadow:
+      0 0 3.5px #fff,
+      0 0 5px #fff,
+      0 0 10.5px #fff,
+      0 0 21px #9fd,
+      0 0 41px #9fd,
+      0 0 46px #9fd,
+      0 0 51px #9fd,
+      0 0 75.5px #9fd;
+	}
+	
+span.pdf
+	{
+	visibility:visible;
+	color: #fff;
+	text-shadow:
+      0 0 3.5px #fff,
+      0 0 5px #fff,
+      0 0 10.5px #fff,
+      0 0 21px #f0a,
+      0 0 41px #f0a,
+      0 0 46px #f0a,
+      0 0 51px #f0a,
+      0 0 75.5px #f0a;
+	}
+
+span.pdf:hover
+	{
+	visibility:visible;
+	color: #fff;
+	text-shadow:
+      0 0 3.5px #fff,
+      0 0 5px #fff,
+      0 0 10.5px #fff,
+      0 0 21px #f6d,
+      0 0 41px #f6d,
+      0 0 46px #f6d,
+      0 0 51px #f6d,
+      0 0 75.5px #f6d;
+	}
+
+/*
+ * ###############################################################
+ * BOTTOM AREA
+ * ###############################################################
+ */
+
+#bottomui
+	{
+	width:100vw;
+	height:10vh;
+	position:absolute;
+	top:90vh;
+	left:0px;
+	background-color:#1c1c1c;
+	overflow: hidden;
+	z-index:999;
+	border-top:0.25vw solid #353535;
+	}
+	
+#about_left
+	{
+	width:50vw;
+	height:10vh;
+	position:absolute;
+	top:90vh;
+	left:0px;
+	overflow: hidden;
+	z-index:999;
+	}
+
+p.about_left_name
+	{
+	padding-left:1vw;
+	padding-top:2.75vh;
+	padding-bottom:1vh;
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:justify;
+	}
+
+p.about_left_about
+	{
+	padding-left:1vw;
+	padding-top:0vh;
+	padding-bottom:1vh;
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:justify;
+	}
+
+#about_right
+	{
+	width:50vw;
+	height:10vh;
+	position:absolute;
+	top:90vh;
+	right:0px;
+	overflow: hidden;
+	z-index:999;
+	}
+
+p.about_right_name
+	{
+	padding-right:1vw;
+	padding-top:2.75vh;
+	padding-bottom:1vh;
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:right;
+	}
+
+p.about_right_about
+	{
+	padding-right:1vw;
+	padding-top:0vh;
+	padding-bottom:1vh;
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:right;
+	}
+
+
+span.html5
+	{
+	visibility:visible;
+	color:#ff6600;
+	}
+	
+span.css3
+	{
+	visibility:visible;
+	color:#2465f1;
+	}
+	
+span.php
+	{
+	visibility:visible;
+	color:#787cb4;
+	}
+	
+span.xml
+	{
+	visibility:visible;
+	color:#cb5641;
+	}
+
+/*
+ * ###############################################################
+ * GAME DESCRIPTION WITH COVER
+ * ###############################################################
+ */
+
+#gamedesc
+	{
+	width:50vw;
+	height:40vh;
+	position:absolute;
+	top:47.5vh;
+	left:27.25vw;
+	overflow:hidden;
+	z-index:0;
+	}
+
+#gamecover
+	{
+	width:18vw;
+	height:40vh;
+	position:absolute;
+	top:47.5vh;
+	right:2vw;
+	background:url("games_covers/selected_game.jpg") no-repeat right center;
+	background-size:auto 40vh;
+	z-index:0;
+	}
+
+p.desc
+	{
+	margin:0;
+	font-family: Main_Texts;
+	color:#ffffff;
+	font-size:1.75vh;
+	text-decoration:none;
+	text-shadow: 1px 0px #000000, 1px 1px #000000, 0px 1px #000000;
+	text-align:justify;
+	}
