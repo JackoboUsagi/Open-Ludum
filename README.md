@@ -33,7 +33,7 @@ Il faut modifier tout d'abord le fichier XML games.xml pour ajouter votre/vos je
 		<command>steam://rungameid/1794960</command>
 	</game>
 ```
-Le numero ID ( ici 1794960 ) se trouve dans le lien de la page Steam officiel du jeu en question
+Le numero ID ( ici 1794960 ) se trouve dans le lien de la page Steam officiel du jeu en question ou en affichant le contenu texte d'un raccourci du jeu en question
 
 - Exemple pour un jeu Epic Games
 ```
