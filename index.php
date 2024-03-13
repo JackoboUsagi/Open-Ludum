@@ -81,7 +81,7 @@ else
 
 			<div id="about_right">
 				<p class="about_right_name">Created by Jackobo "Akina" Usagi</p>
-				<p class="about_right_about"><a href="https://github.com/JackoboUsagi" target="_blank">Github Profile</a> - <a href="https://github.com/JackoboUsagi/Open-Ludum" target="_blank">Source Code on Github</a> - Version 2024.03.12</p>
+				<p class="about_right_about"><a class="about" href="https://github.com/JackoboUsagi" target="_blank">Github Profile</a> - <a class="about" href="https://github.com/JackoboUsagi/Open-Ludum" target="_blank">Source Code on Github</a> - Version 2024.03.12</p>
 			</div>
 
 		</body>

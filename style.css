@@ -33,13 +33,6 @@ a
 	outline : none;
 	}
 
-a:hover
-	{
-	text-decoration:none;
-	color:#ff8888;
-	outline : none;
-	}
-
 /*
  * ###############################################################
  * LIST OF THE GAMES
@@ -367,6 +360,13 @@ span.xml
 	{
 	visibility:visible;
 	color:#cb5641;
+	}
+
+a.about:hover
+	{
+	text-decoration:none;
+	color:#ff8888;
+	outline : none;
 	}
 
 /*
